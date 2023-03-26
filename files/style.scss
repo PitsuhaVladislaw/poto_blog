@@ -1,0 +1,414 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    @font-face {
+        font-family: Exo;
+        src: url(../font/Exo-Black.ttf);
+    }
+    @font-face {
+        font-family: Gluten;
+        src: url(../font/Gluten-Black.ttf);
+    }
+
+    body {
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    header {
+        position: sticky;
+        top: 0px;
+        height: auto;
+        width: auto;
+        background: #FFD600;
+    }
+
+    .header-menu {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: auto;
+        height: 49px;
+        img {
+            width: 125px;
+            height: 39px;
+            border-radius: 16px;
+            border: 2px solid black;
+        }
+        div {
+            display: flex;
+            width: auto;
+            height: 39px;
+        }
+    }
+
+    .but-add {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background: #FFE587;
+        border: 0px solid black;
+        height: 39px;
+        width: 39px;
+        img {
+            height: 39px;
+            width: 39px;
+            border: 0;
+        }
+    }
+    .burger-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 39px;
+        width: 39px;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        margin-left: 20px;
+        img {
+            height: 21px;
+            width: 29px;
+            border-radius: 0;
+            border: 0;
+        }
+    }
+
+    main {
+        width: auto;
+        height: auto;
+    }
+    .main-block {
+        margin: 0 auto;
+        height: 555px;
+        width: auto;
+        border-bottom: 3px solid black;
+        section {
+            height: 555px;
+            width: auto;
+            background: white;
+            h1 {
+                margin: 21px auto 0;
+                width: 278px;
+                font-family: 'Gluten';
+                font-size: 20px;
+                line-height: 40px;
+                text-align: center;
+                letter-spacing: 0.4em;
+                color: #000000;
+            }
+            div {
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+                img {
+                    height: 298px;
+                    width: 115px;
+                }
+                p {
+                    margin: 0;
+                    height: 298px;
+                    width: 165px;
+                    font-family: 'Exo';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.05em;
+                }
+            }
+        }
+    }
+    .but-wel {
+        display: block;
+        margin: 25px auto 0;
+        height: 31px;
+        width: 186px;
+        background: #FFD600;
+        border: 2px solid black;
+        border-radius: 20px;
+        h5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            font-family: "Exo";
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: 0.6em;
+            text-transform: uppercase;
+            color: #000000;
+            margin: 0;
+        }
+    }
+    .serv-block {
+        margin: 0 auto;
+        height: 604px;
+        width: auto;
+        border-bottom: 3px solid black;
+        section {
+            height: 604px;
+            width: auto;
+            background: white;
+            h2 {
+                margin: 25px auto 0;
+                font-family: 'Exo';
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 27px;
+                text-align: center;
+                letter-spacing: 0.25em;
+                color: #000000;
+            }
+        }
+    }
+    .price-block {
+        margin: 0 auto;
+        height: 606px;
+        width: auto;
+        section {
+            height: 606px;
+            width: auto;
+            background: #FFD600;
+            h2 {
+                margin: 0 auto;
+                font-family: 'Exo';
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 33px;
+                text-align: center;
+                letter-spacing: 0.25em;
+                color: #000000;
+            }
+            h3 {
+                margin: 0;
+                font-family: 'Exo';
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 21px;
+                text-align: center;
+                letter-spacing: 0.7em;
+                font-variant: small-caps;
+                color: #000000;
+            }
+        }
+    }
+    .table-price {
+        height: auto;
+        width: 219px;
+        background: white;
+        border: 1px solid black;
+        border-radius: 20px 20px 0 0;
+        margin: 23px 25px 0px 76px;
+        div {
+            border: 1px solid black;
+        }
+    }
+    .block-price {
+        display: grid;
+        grid-template-columns: 108px 111px;
+        grid-template-rows: 62px 62px;
+        img {
+            width: 108px;
+            height: 61px;
+        }
+        p {
+            width: 109px;
+            font-family: 'Exo';
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: lowercase;
+            margin: 0;
+        }
+        h6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 6px auto 10px;
+            height: 30px;
+            width: 50px;
+            font-family: 'Exo';
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 17px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-decoration-line: underline;
+            text-transform: lowercase;
+            color: #A71919;
+        }
+    }
+    .img-p {
+        position: relative;
+        width: 83px;
+        height: 239.06px;
+        left: 0px;
+        bottom: 0;
+    }
+    .img-h {
+        position: relative;
+        width: 147.76px;
+        height: 140.6px;
+        right: 68.61px;
+        bottom: 138px;
+        transform: rotate(-26deg);
+    }
+    .block-type-1 {
+        margin: 10px auto 0;
+        height: auto;
+        width: 301px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        p {
+            margin: 0;
+            width: 256px;
+            font-family: 'Exo';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            text-decoration-line: underline;
+            color: #000000;
+        }
+        div {
+            width: 45px;
+            height: 45px;
+            background: #C02A2A;
+            border: 1px solid black;
+        }
+    }
+    .block-type-2 {
+        margin: 20px auto 0;
+        height: auto;
+        width: 301px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        p {
+            margin: 0;
+            width: 256px;
+            font-family: 'Exo';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            text-decoration-line: underline;
+            color: #000000;
+        }
+        div {
+            width: 45px;
+            height: 45px;
+            background: #C02A2A;
+            border: 1px solid black;
+        }
+    }
+    .img-1 {
+        height: 131px;
+        width: 156px;
+        margin: 16px auto 0;
+        img {
+            height: 131px;
+            width: 156px;
+        }
+    }
+    .img-2 {
+        height: 113px;
+        width: 186px;
+        margin: 10px auto 0;
+        img {
+            height: 113px;
+            width: 186px;
+        }
+    }
+    .pic-fon-1 {
+        height: 245px;
+        width: auto;
+        background-image: url(../src/image\ 6.png);
+        background-size: cover;
+    }
+    .pic-fon-2 {
+        height: 245px;
+        width: auto;
+        background-image: url(../src/image\ 7.png);
+        background-size: cover;
+    }
+    footer {
+        background: black;
+        width: auto;
+        height: 134px;
+    }
+    .footer-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+        height: 134px;
+        width: auto;
+    }
+    .partner {
+        height: 102px;
+        width: 76px;
+        h3 {
+            margin: 0 auto;
+            font-family: Exo;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.1em;
+            text-transform: lowercase;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        img {
+            height: 77px;
+            width: 76px;
+        }
+    }
+    .connect {
+        height: 102px;
+        width: 199px;
+        background: white;
+        border: 0;
+        border-radius: 25px;
+        h4 {
+            font-family: Exo;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 17px;
+            letter-spacing: 0.1em;
+            text-align: center;
+            text-transform: lowercase;
+            color: #000000;
+            margin: 0;
+            height: 29px;
+        }
+        div {
+            display: grid;
+            grid-template-columns: 30px 131px;
+            grid-template-rows: 32px 27px;
+            justify-content: center;
+            img {
+                height: 25px;
+                width: 25px;
+                border: 1px solid black;
+            }
+            p {
+                font-family: Exo;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 15px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-transform: lowercase;
+                color: #000000;
+                margin: 5px 0;
+            }
+        }
+    }
+}
