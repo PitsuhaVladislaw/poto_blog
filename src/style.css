@@ -24,18 +24,18 @@
     justify-content: space-around;
     align-items: center;
     width: auto;
-    height: 49px;
+    height: 63px;
   }
   .header-menu img {
-    width: 125px;
-    height: 39px;
+    width: 142px;
+    height: 49px;
     border-radius: 16px;
     border: 2px solid black;
   }
   .header-menu div {
     display: flex;
     width: auto;
-    height: 39px;
+    height: auto;
   }
   .but-add {
     display: flex;
@@ -44,27 +44,27 @@
     border-radius: 10px;
     background: #FFE587;
     border: 0px solid black;
-    height: 39px;
-    width: 39px;
+    height: 49px;
+    width: 49px;
   }
   .but-add img {
-    height: 39px;
-    width: 39px;
+    height: 45px;
+    width: 45px;
     border: 0;
   }
   .burger-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 39px;
-    width: 39px;
+    height: 49px;
+    width: 49px;
     border: 1px solid #000000;
     border-radius: 10px;
     margin-left: 20px;
   }
   .burger-menu img {
-    height: 21px;
-    width: 29px;
+    height: 26px;
+    width: 36px;
     border-radius: 0;
     border: 0;
   }
@@ -348,26 +348,26 @@
   }
   .partner {
     height: 102px;
-    width: 76px;
+    width: auto;
   }
   .partner h3 {
     margin: 0 auto;
     font-family: Exo;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
     text-transform: lowercase;
     text-align: center;
     color: #FFFFFF;
   }
   .partner img {
-    height: 77px;
-    width: 76px;
+    height: 89px;
+    width: 89px;
   }
   .connect {
-    height: 102px;
-    width: 199px;
+    height: 110px;
+    width: 216px;
     background: white;
     border: 0;
     border-radius: 25px;
@@ -375,30 +375,31 @@
   .connect h4 {
     font-family: Exo;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 17px;
     letter-spacing: 0.1em;
     text-align: center;
     text-transform: lowercase;
     color: #000000;
     margin: 0;
-    height: 29px;
+    height: 27px;
+    margin-top: 6px;
   }
   .connect div {
     display: grid;
-    grid-template-columns: 30px 131px;
-    grid-template-rows: 32px 27px;
+    grid-template-columns: 32px 172px;
+    grid-template-rows: 32px 32px;
     justify-content: center;
   }
   .connect div img {
-    height: 25px;
-    width: 25px;
+    height: 32px;
+    width: 32px;
     border: 1px solid black;
   }
   .connect div p {
     font-family: Exo;
     font-weight: 700;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 15px;
     text-align: center;
     letter-spacing: 0.1em;
