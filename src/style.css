@@ -1,11 +1,11 @@
 @media (min-width: 320px) and (max-width: 480px) {
   @font-face {
     font-family: Exo;
-    src: url(../font/Exo-Black.ttf);
+    src: url(../src/assets/font/Exo-Black.ttf);
   }
   @font-face {
     font-family: Gluten;
-    src: url(../font/Gluten-Black.ttf);
+    src: url(../src/assets/font/Gluten-Black.ttf);
   }
   body {
     margin: 0 auto;
@@ -75,9 +75,6 @@
   .landing-page {
     display: none;
   }
-  * {
-    outline: 1px solid red;
-  }
   .model-page {
     margin-top: 10px;
   }
@@ -99,13 +96,14 @@
     display: grid;
     gap: 50px;
     height: auto;
-    width: 286px;
+    width: auto;
     margin: 0 auto;
   }
   .card {
     display: flex;
     height: auto;
-    width: 286px;
+    width: auto;
+    margin: 0 27px;
     background: #FFD336;
     border: 2px solid #000000;
     border-radius: 18px;
@@ -121,7 +119,7 @@
     margin: 0 auto;
     font-family: monospace;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 0px;
     display: flex;
     align-items: center;
@@ -380,13 +378,13 @@
   .pic-fon-1 {
     height: 245px;
     width: auto;
-    background-image: url(../public/image\ 6.png);
+    background-image: url(../src/assets/image/image\ 6.png);
     background-size: cover;
   }
   .pic-fon-2 {
     height: 245px;
     width: auto;
-    background-image: url(../public/image\ 7.png);
+    background-image: url(../src/assets//image/image\ 7.png);
     background-size: cover;
   }
   footer {

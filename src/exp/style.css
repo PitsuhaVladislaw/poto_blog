@@ -1,0 +1,83 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    * {
+        outline: 1px solid red;
+    }
+
+    @font-face {
+        font-family: Digital Numbers;
+        src: url(/font/DeliusUnicase-Regular.ttf);
+    }
+
+    @keyframes card-ani {
+        from {
+            height: 86px;
+        }
+        to {
+            height: 424px;
+        }
+    }
+
+    .card {
+        margin: 0 27px;
+        height: auto;
+        width: auto;
+        background: #FFD336;
+        border: 2px solid #000000;
+        border-radius: 18px;
+    }
+    .card-head {
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+    .card-head img {
+        cursor: pointer;
+        box-sizing: border-box;
+        width: 86px;
+        height: 86px;
+        border: 3px solid #000000;
+        border-radius: 15px;
+    }
+    .card-head h3 {
+        margin: 0 auto;
+        font-family: monospace;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 0px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+
+    .card-head button {
+        display: none;
+    }
+
+    .card-body {
+        display: none;
+    }
+
+    @keyframes cardHeightUp {
+        from {
+            height: 86px;
+        }
+        to {
+            height: 424px;
+        }
+    }
+
+    .card-open {
+        margin: 0 27px;
+        height: 424px;
+        width: auto;
+        background: #FFD336;
+        border: 2px solid #000000;
+        border-radius: 18px;
+
+        animation-name: cardHeightUp;
+        animation-duration: 1s;
+    }
+
+
+}
