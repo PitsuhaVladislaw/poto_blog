@@ -1,0 +1,25 @@
+{
+  "name": "photo_blog",
+  "version": "1.1.0",
+  "description": "My own freelance project for my friend",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "button-type": "off",
+    "detect-css-reflows/composite": "off",
+    "detect-css-reflows/layout": "off",
+    "detect-css-reflows/paint": "off",
+    "highest-available-document-mode": "off",
+    "no-inline-styles": "off"
+  },
+  "author": "Vladislav Pitsukha",
+  "license": "ISC"
+}
