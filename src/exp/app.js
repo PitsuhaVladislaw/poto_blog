@@ -1,16 +1,11 @@
+import openCard from "./closeCard";
+
+const imageTom = document.querySelector(".card-head img");
+
 const card = document.querySelector('.card');
 const hTom = document.querySelector(".card-head h3");
-const imageTom = document.querySelector(".card-head img");
-const butTom = document.querySelector(".card-head button");
-const logText = document.querySelector("#logText");
+const cardBody = document.querySelector(".card-body");
+const hCardBody = document.querySelector(".card-body h5");
+const galCardBody = document.getElementById("galCardBody");
 
-imageTom.addEventListener('click', (e) => {
-    e.preventDefault();
-    card.classList.remove("card");
-    card.classList.add("card-open");
-
-    setTimeout(() => {
-        imageTom.style.width = "152px";
-        imageTom.style.height =  "173px";
-    }, 1000);
-});
+imageTom.addEventListener('click', openCard(e));

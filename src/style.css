@@ -72,9 +72,6 @@
     width: auto;
     height: auto;
   }
-  .landing-page {
-    display: none;
-  }
   .model-page {
     margin-top: 10px;
   }
@@ -128,14 +125,15 @@
   }
   .main-block {
     margin: 0 auto;
-    height: 555px;
+    height: auto;
     width: auto;
     border-bottom: 3px solid black;
   }
   .main-block section {
-    height: 555px;
+    height: auto;
     width: auto;
     background: white;
+    margin: 0 20px;
   }
   .main-block section h1 {
     margin: 21px auto 0;
@@ -170,7 +168,7 @@
   }
   .but-wel {
     display: block;
-    margin: 25px auto 0;
+    margin: 25px auto 35px;
     height: 31px;
     width: 186px;
     background: #FFD600;
@@ -192,17 +190,18 @@
   }
   .serv-block {
     margin: 0 auto;
-    height: 604px;
+    height: auto;
     width: auto;
     border-bottom: 3px solid black;
   }
   .serv-block section {
-    height: 604px;
+    height: auto;
     width: auto;
     background: white;
+    margin: 0 10px 20px;
   }
   .serv-block section h2 {
-    margin: 25px auto 0;
+    margin: 25px 25px 0;
     font-family: "Exo";
     font-weight: 700;
     font-size: 20px;
@@ -308,14 +307,14 @@
   .block-type-1 {
     margin: 10px auto 0;
     height: auto;
-    width: 301px;
+    width: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border: 1px solid black;
   }
   .block-type-1 p {
-    margin: 0;
+    margin: 0 auto;
     width: 256px;
     font-family: "Exo";
     font-weight: 400;
@@ -334,14 +333,14 @@
   .block-type-2 {
     margin: 20px auto 0;
     height: auto;
-    width: 301px;
+    width: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border: 1px solid black;
   }
   .block-type-2 p {
-    margin: 0;
+    margin: 0 auto;
     width: 256px;
     font-family: "Exo";
     font-weight: 400;
