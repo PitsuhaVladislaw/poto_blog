@@ -4,8 +4,13 @@
     }
 
     @font-face {
+        font-family: Exo;
+        src: url(../assets/font/Exo-Black.ttf);
+    }
+
+    @font-face {
         font-family: Digital Numbers;
-        src: url(/font/DeliusUnicase-Regular.ttf);
+        src: url(../assets/font/DeliusUnicase-Regular.ttf);
     }
 
     @keyframes card-ani {
@@ -55,16 +60,63 @@
     }
 
     .card-body {
-        display: none;
+        height: 197px;
+        width: 266px;
+        margin: 39px auto 0;
+        border-radius: 40px 40px 20px 20px;
+        border: 2px solid black;
     }
 
-    @keyframes cardHeightUp {
+    .card-body h5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 11px auto;
+        width: 244px;
+        height: 72px;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: 0.05em;
+        color: #000000;
+    }
+
+    .card-body div {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+    .card-body img {
+        width: 72px;
+        height: 92px;
+        border: 2px solid #000000;;
+        border-radius: 20px;
+    }
+
+    @keyframes blcCardBody {
         from {
-            height: 86px;
+            width: 0;
+            height: 0;
         }
+
         to {
-            height: 424px;
+            width: 266px;
+            height: 197px;
         }
+    }
+
+    .card-body-active {
+        height: 197px;
+        width: 266px;
+        margin: 39px auto 0;
+        border-radius: 40px 40px 20px 20px;
+        border: 2px solid black;
+
+        animation-name: blcCardBody;
+        animation-duration: 1s;
     }
 
     .card-open {
@@ -78,6 +130,4 @@
         animation-name: cardHeightUp;
         animation-duration: 1s;
     }
-
-
 }
