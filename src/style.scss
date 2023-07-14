@@ -16,9 +16,11 @@
     header {
         position: sticky;
         top: 0px;
+        z-index: 40;
         height: auto;
         width: auto;
         background: #FFD600;
+        border-bottom: 1px solid black;
     }
 
     .header-menu {
@@ -76,10 +78,6 @@
     main {
         width: auto;
         height: auto;
-    }
-
-    .landing-page {
-        //display: none;
     }
 
     .model-page {
@@ -225,84 +223,102 @@
         }
     }
     .price-block {
+        position: relative;
         margin: 0 auto;
-        height: 606px;
-        width: auto;
-        section {
-            height: 606px;
-            width: auto;
-            background: #FFD600;
-            h2 {
-                margin: 0 auto;
-                font-family: 'Exo';
-                font-weight: 700;
-                font-size: 25px;
-                line-height: 33px;
-                text-align: center;
-                letter-spacing: 0.25em;
-                color: #000000;
-            }
-            h3 {
-                margin: 0;
-                font-family: 'Exo';
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 21px;
-                text-align: center;
-                letter-spacing: 0.7em;
-                font-variant: small-caps;
-                color: #000000;
-            }
-        }
-    }
-    .table-price {
         height: auto;
-        width: 219px;
-        background: white;
-        border: 1px solid black;
-        border-radius: 20px 20px 0 0;
-        margin: 23px 25px 0px 76px;
-        div {
-            border: 1px solid black;
-        }
-    }
-    .block-price {
-        display: grid;
-        grid-template-columns: 108px 111px;
-        grid-template-rows: 62px 62px;
-        img {
-            width: 108px;
-            height: 61px;
-        }
-        p {
-            width: 109px;
+        width: auto;
+        padding-top: 24px;
+        background: #FFD600;
+
+        h1 {
+            margin: 0px 25px 0;
             font-family: 'Exo';
             font-weight: 700;
-            font-size: 12px;
-            line-height: 16px;
+            font-size: 20px;
+            line-height: 27px;
             text-align: center;
-            letter-spacing: 0.1em;
-            text-transform: lowercase;
-            margin: 0;
+            letter-spacing: 0.25em;
+            color: #000000;
         }
-        h6 {
+
+        section {
+            margin: 20px 20px 0 0;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 6px auto 10px;
-            height: 30px;
-            width: 50px;
-            font-family: 'Exo';
-            font-weight: 700;
-            font-size: 13px;
-            line-height: 17px;
-            text-align: center;
-            letter-spacing: 0.1em;
-            text-decoration-line: underline;
-            text-transform: lowercase;
-            color: #A71919;
+            justify-content: space-between;
+            align-items: end;
+
+            img {
+                width: 82px;
+                height: 245px;
+            }
         }
     }
+
+    .tbl-prize {
+        width: 219px;
+        height: auto;
+        background: white;
+        border-radius: 20px 20px 0 0;
+        outline: 1px solid black;
+
+        th {
+            height: 27px;
+            width: auto;
+
+            p {
+                margin: 0;
+                color: #000;
+                text-align: center;
+                font-family: Exo;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 7px;
+                text-transform: uppercase;
+            }
+        }
+
+        td {
+            height: auto;
+            width: 109px;
+            outline: 1px solid black;
+
+            img {
+                width: 109px;
+                height: 60px;
+                background-size: cover;
+            }
+
+            p {
+                color: #000;
+                text-align: center;
+                font-family: Exo;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 1.2px;
+                text-transform: lowercase;
+                margin: 0;
+            }
+            
+            h6 {
+                color: #A71919;
+                text-align: center;
+                font-family: Exo;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 1.3px;
+                text-decoration-line: underline;
+                text-transform: lowercase;
+                margin: 0;
+            }
+        }
+    }
+    
     .img-p {
         position: relative;
         width: 83px;
@@ -310,6 +326,7 @@
         left: 0px;
         bottom: 0;
     }
+
     .img-h {
         position: relative;
         width: 147.76px;
@@ -318,6 +335,7 @@
         bottom: 138px;
         transform: rotate(-26deg);
     }
+
     .block-type-1 {
         margin: 10px auto 0;
         height: auto;
@@ -400,6 +418,80 @@
         background-image: url(../src/assets//image/image\ 7.png);
         background-size: cover;
     }
+    
+    .works-page {
+        margin: 10px 17px auto;
+        height: auto;
+        width: auto;
+
+        h1 {
+            margin: 0;
+            font-family: "Exo";
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 48px;
+            text-align: center;
+            letter-spacing: 0.6em;
+            color: #000000;
+        }
+
+        article {
+            display: grid;
+            grid-template-columns: repeat(2, 100px);
+            gap: 30px;
+            justify-content: space-evenly;
+            margin: 27px auto 60px;
+            height: auto;
+            width: auto;
+        }
+    }
+
+    .client-block {
+        position: static;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+
+        .gender {
+            position: absolute;
+            right: 0px;
+            bottom: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            outline: 1px solid black;
+            background: white;
+
+            img {
+                margin: 0 auto;
+                height: auto;
+                width: auto;
+            }
+        }
+
+        .h-clblock {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: 20px;
+            outline: 1px solid black;
+
+            h6 {
+                color: #000;
+                text-align: center;
+                font-family: Exo;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 0px;
+                letter-spacing: 6px;
+            }
+        }
+    }
+
     footer {
         background: black;
         width: auto;
@@ -453,18 +545,17 @@
         }
         div {
             display: grid;
-            grid-template-columns: 32px 172px;
+            grid-template-columns: 32px 150px;
             grid-template-rows: 32px 32px;
             justify-content: center;
             img {
                 height: 32px;
                 width: 32px;
-                border: 1px solid black;
             }
             p {
                 font-family: Exo;
                 font-weight: 700;
-                font-size: 14px;
+                font-size: 12px;
                 line-height: 15px;
                 text-align: center;
                 letter-spacing: 0.1em;
