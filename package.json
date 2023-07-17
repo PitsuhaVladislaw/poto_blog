@@ -3,6 +3,11 @@
   "version": "1.1.0",
   "description": "My own freelance project for my friend",
   "private": true,
+  "main": "app.js",
+  "homepage": "https://pitsuhavladislaw.github.io/poto_blog/public/index.html",
+  "bugs": {
+    "email": "vladikpizza02@gmail.com"
+  },
   "scripts": {
     "start": "node app.js"
   },
@@ -20,6 +25,6 @@
     "highest-available-document-mode": "off",
     "no-inline-styles": "off"
   },
-  "author": "Vladislav Pitsukha",
+  "author": "Vladislav Pitsukha <vladikpizza02@gmail.com>",
   "license": "ISC"
 }
