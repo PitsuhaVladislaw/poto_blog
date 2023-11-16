@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="shortcut icon" href="../src/assets/icon/2317988.png">
     <title>Main page</title>
 </head>
+
 <body>
     <header>
         <div class="header-menu">
@@ -18,30 +20,57 @@
                         <img src="../src/assets/svg/plus.png" alt="plus">
                     </button>
                 </form>
-                <form class="burger-menu">
+                <button id="burger-menu" class="burger-menu">
                     <img src="../src/assets/svg/b-menu.png" alt="burger-menu">
-                </form>
+                </button>
             </div>
         </div>
     </header>
     <main>
         <section class="landing-page">
+            <article id="menu-link">
+                <div>
+                    <a href="../src/page/Account/Account.html">
+                        <h5>Account</h5>
+                    </a>
+                </div>
+                <div>
+                    <a href="../src/page/LastWorks/LastWorks.html">
+                        <h5>Last works</h5>
+                    </a>
+                </div>
+                <div>
+                    <a href="../src/page/Customer/Customer.html">
+                        <h5>Works for clients</h5>
+                    </a>
+                </div>
+                <div>
+                    <a href="../src/page/Reviews/Clients.html">
+                        <h5>Reviews</h5>
+                    </a>
+                </div>
+                <div style="border: none;"></div>
+            </article>
             <article class="main-block">
                 <section>
                     <h1>If you want a miracle, let's capture it</h1>
                     <div>
                         <img src="../src/assets/image/image 3.png" alt="avatar">
                         <p>
-                            Hi, my name is Albert, I'm a photographer, still a beginner in this business, but I've been taking
+                            Hi, my name is Albert, I'm a photographer, still a beginner in this business, but I've been
+                            taking
                             photographs for several
                             months.
                             <br>
                             <br>
-                            If you need help with photography, both individual and collective, then I will be happy to help you.
+                            If you need help with photography, both individual and collective, then I will be happy to
+                            help you.
                         </p>
                     </div>
                     <div class="but-wel">
-                        <h5>Welcome</h5>
+                        <a href="#" 
+                        onclick="scrollToElement('price')"
+                        ><h5>Welcome</h5></a>
                     </div>
                 </section>
             </article>
@@ -76,7 +105,7 @@
             </article>
             <div class="pic-fon-2">
             </div>
-            <article class="price-block">
+            <article class="price-block" id="price">
                 <h1>What about price?</h1>
                 <section>
                     <img src="../src/assets/image/image 11.png" alt="man-shadow">
@@ -148,243 +177,6 @@
                 </section>
             </article>
         </section>
-        <section class="model-page">
-            <h1>Models</h1>
-            <article class="main-model">
-                <div class="cards">
-                    <div class="card">
-                        <img src="../src/assets/image/image 32.png" alt="KeremBursin">
-                        <h3>Kerem Bursin</h3>
-                    </div>
-                    <div class="card">
-                        <img src="../src/assets/image/image 19.png" alt="BarbaraPalvin">
-                        <h3>Cara Delevingne</h3>
-                    </div>
-                    <div class="card">
-                        <img src="../src/assets/image/image 18.png" alt="CaraDelevingne">
-                        <h3>Barbara Palvin</h3>
-                    </div>
-                    <div class="card">
-                        <img src="../src/assets/image/image 17.png" alt="TomHolland">
-                        <h3>Tom Holland</h3>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="works-page">
-            <h1>Work for clients</h1>
-            <article>
-                <div class="client-block">
-                    <div style="position: relative;">
-                        <img style="margin-bottom: 16px;" src="../src/assets/svg/letter.png" alt="letter">
-                        <div class="gender">
-                            <img src="../src/assets/svg/man.png" alt="gender">
-                        </div>
-                    </div>
-                    <div class="h-clblock">
-                        <h6>Kerem</h6>
-                    </div>
-                </div>
-                <div class="client-block">
-                    <div style="position: relative;">
-                        <img style="margin-bottom: 16px;" src="../src/assets/svg/letter.png" alt="letter">
-                        <div class="gender">
-                            <img src="../src/assets/svg/man.png" alt="gender">
-                        </div>
-                    </div>
-                    <div class="h-clblock">
-                        <h6>Tom</h6>
-                    </div>
-                </div>
-                <div class="client-block">
-                    <div style="position: relative;">
-                        <img style="margin-bottom: 16px;" src="../src/assets/svg/letter.png" alt="letter">
-                        <div class="gender">
-                            <img src="../src/assets/svg/woman.png" alt="gender">
-                        </div>
-                    </div>
-                    <div class="h-clblock">
-                        <h6>Alice</h6>
-                    </div>
-                </div>
-                <div class="client-block">
-                    <div style="position: relative;">
-                        <img style="margin-bottom: 16px;" src="../src/assets/svg/letter.png" alt="letter">
-                        <div class="gender">
-                            <img style="width: 28px; height: 28px;" src="../src/assets/svg/family.png" alt="gender">
-                        </div>
-                    </div>
-                    <div class="h-clblock">
-                        <h6>Henry</h6>
-                    </div>
-                </div>
-                <div class="client-block">
-                    <div style="position: relative;">
-                        <img style="margin-bottom: 16px;" src="../src/assets/svg/letter.png" alt="letter">
-                        <div class="gender">
-                            <img style="width: 28px; height: 28px;" src="../src/assets/svg/family.png" alt="gender">
-                        </div>
-                    </div>
-                    <div class="h-clblock">
-                        <h6>Maria</h6>
-                    </div>
-                </div>
-                <div class="client-block">
-                    <div style="position: relative;">
-                        <img style="margin-bottom: 16px;" src="../src/assets/svg/letter.png" alt="letter">
-                        <div class="gender">
-                            <img src="../src/assets/svg/woman.png" alt="gender">
-                        </div>
-                    </div>
-                    <div class="h-clblock">
-                        <h6>Holly</h6>
-                    </div>
-                </div>
-                <div class="client-block">
-                    <div style="position: relative;">
-                        <img style="margin-bottom: 16px;" src="../src/assets/svg/letter.png" alt="letter">
-                        <div class="gender">
-                            <img src="../src/assets/svg/woman.png" alt="gender">
-                        </div>
-                    </div>
-                    <div class="h-clblock">
-                        <h6>Milana</h6>
-                    </div>
-                </div>
-                <div class="client-block">
-                    <div style="position: relative;">
-                        <img style="margin-bottom: 16px;" src="../src/assets/svg/letter.png" alt="letter">
-                        <div class="gender">
-                            <img style="width: 28px; height: 28px;" src="../src/assets/svg/family.png" alt="gender">
-                        </div>
-                    </div>
-                    <div class="h-clblock">
-                        <h6>Jack</h6>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="account-page">
-            <h1>Kerem Bursin</h1>
-            <article>
-                <div>
-                    <img src="../src/assets/image/kerem/kerem-1.png" alt="photo 1">
-                </div>
-                <div>
-                    <img src="../src/assets/image/kerem/kerem-2.png" alt="photo 2">
-                </div>
-                <div>
-                    <img src="../src/assets/image/kerem/kerem-3.png" alt="photo 3">
-                </div>
-                <div>
-                    <img src="../src/assets/image/kerem/kerem-4.png" alt="photo 4">
-                </div>
-                <div>
-                    <img src="../src/assets/image/kerem/kerem-5.png" alt="photo 5">
-                </div>
-                <div>
-                    <img src="../src/assets/image/kerem/kerem-6.png" alt="photo 6">
-                </div>
-                <div>
-                    <img src="../src/assets/image/kerem/kerem-7.png" alt="photo 7">
-                </div>
-                <div>
-                    <img src="../src/assets/image/kerem/kerem-8.png" alt="photo 8">
-                </div>
-                <div>
-                    <img src="../src/assets/image/kerem/kerem-9.png" alt="photo 9">
-                </div>
-                <div>
-                    <img src="../src/assets/image/kerem/kerem-10.png" alt="photo 10">
-                </div>
-                <div>
-                    <img src="../src/assets/image/kerem/kerem-11.png" alt="photo 11">
-                </div>
-                <div>
-                    <img src="../src/assets/image/kerem/kerem-12.png" alt="photo 12">
-                </div>
-                <div>
-                    <img src="../src/assets/image/kerem/kerem-13.jpg" alt="photo 13">
-                </div>
-                <div>
-                    <img src="../src/assets/image/kerem/kerem-14.jpg" alt="photo 14">
-                </div>
-                <div>
-                    <img src="../src/assets/image/kerem/kerem-15.jpg" alt="photo 15">
-                </div>
-            </article>
-        </section>
-        <section class="last-works">
-            <h1>Last works</h1>
-            <article>
-                <section>
-                    <div>
-                        <img src="../src/assets/image/last-works/kerem-12.png" alt="photo 1">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/kerem-11.png" alt="photo 2">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/kerem-10.png" alt="photo 3">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/kerem-9.png" alt="photo 4">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/image 27.png" alt="photo 5">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/image 27 (1).png" alt="photo 6">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/image 27 (2).png" alt="photo 7">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/image 27 (3).png" alt="photo 8">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/image 27 (4).png" alt="photo 9">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/image 27 (5).png" alt="photo 10">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/image 27 (6).png" alt="photo 11">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/image 27 (7).png" alt="photo 12">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/image 27 (8).png" alt="photo 13">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/image 27 (9).png" alt="photo 14">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/image 27 (10).png" alt="photo 15">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/f01510fa48c3385525981ae8c8c17fe7.jpg" alt="photo 16">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/Pre-wedding-Photoshoot-Ideas-9.jpg" alt="photo 17">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/photo-1613856621286-064e3f6ce1b1.jpg" alt="photo 18">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/photo-1637921883373-cd8807a6bf5e.jpg" alt="photo 19">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/39ed35cf356f902fb26735f56784fe46.jpg" alt="photo 20">
-                    </div>
-                    <div>
-                        <img src="../src/assets/image/last-works/1664946625-343777-best-photoshoot-location-coimabtore-013.jpg" alt="photo 21">
-                    </div>
-                </section>
-                <p>...</p>
-            </article>
-        </section>
     </main>
     <footer>
         <div class="footer-menu">
@@ -405,4 +197,5 @@
     </footer>
     <script src="../src/app.js"></script>
 </body>
+
 </html>

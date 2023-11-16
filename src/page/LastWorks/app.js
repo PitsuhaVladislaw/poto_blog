@@ -15,7 +15,7 @@ function activeBlock(e) {
     blockLink.classList.toggle('menuActive');
 }
 
-window.onload = function() {
+window.onload = function () {
     setTimeout(() => {
         blockLink.classList.toggle('menuClose');
         blockLink.style.display = 'none';
@@ -23,11 +23,3 @@ window.onload = function() {
         burgerMenu.classList.add('close');
     }, 500)
 }
-
-// * Scrolling
-
-function scrollToElement(elementId) {
-    var element = document.getElementById(elementId);
-    element.scrollIntoView({ behavior: 'smooth' });
-}
-

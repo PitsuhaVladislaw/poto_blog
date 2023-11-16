@@ -1,11 +1,18 @@
 @media (min-width: 320px) and (max-width: 480px) {
   @font-face {
-    font-family: Exo;
+    font-family: "Exo";
     src: url(../src/assets/font/Exo-Black.ttf);
   }
   @font-face {
-    font-family: Gluten;
+    font-family: "Gluten";
     src: url(../src/assets/font/Gluten-Black.ttf);
+  }
+  .footer-menu, .block-type-2, .block-type-1, .price-block section, .but-wel a h5, .main-block section div, .landing-page #menu-link div, .burger-menu, .but-add, .header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
   }
   body {
     margin: 0 auto;
@@ -22,10 +29,7 @@
   }
   .header-menu {
     margin: 0 auto;
-    display: flex;
     justify-content: space-around;
-    align-items: center;
-    width: auto;
     height: 63px;
   }
   .header-menu img {
@@ -38,11 +42,9 @@
     display: flex;
     width: auto;
     height: auto;
+    gap: 20px;
   }
   .but-add {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 10px;
     background: #FFE587;
     border: 0px solid black;
@@ -55,9 +57,6 @@
     border: 0;
   }
   .burger-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 49px;
     width: 49px;
     border: 1px solid #000000;
@@ -69,6 +68,32 @@
     width: 36px;
     border-radius: 0;
     border: 0;
+  }
+  .burger-menu .close {
+    transform: rotate(0deg);
+    animation-name: closeBut;
+    animation-duration: 0.2s;
+  }
+  .burger-menu .active {
+    transform: rotate(180deg);
+    animation-name: activeBut;
+    animation-duration: 0.2s;
+  }
+  @keyframes activeBut {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  @keyframes closeBut {
+    from {
+      transform: rotate(180deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
   }
   main {
     width: auto;
@@ -87,43 +112,65 @@
     letter-spacing: 0.6em;
     color: #000000;
   }
-  .main-model {
-    width: auto;
-    margin: 15px auto 45px;
+  .landing-page {
+    position: relative;
   }
-  .cards {
-    display: grid;
-    gap: 50px;
-    height: auto;
-    width: auto;
-    margin: 0 auto;
+  .landing-page #menu-link {
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+    border-radius: 0px 0px 0px 62px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    background: #FFD600;
+    top: 64px;
   }
-  .card {
-    display: flex;
-    height: auto;
-    width: auto;
-    margin: 0 27px;
-    background: #FFD336;
-    border: 2px solid #000000;
-    border-radius: 18px;
+  .landing-page #menu-link div {
+    border-bottom: 1px solid #000;
+    width: 173px;
+    height: 41px;
   }
-  .card img {
-    box-sizing: border-box;
-    width: 86px;
-    height: 86px;
-    border: 3px solid #000000;
-    border-radius: 15px;
+  .landing-page #menu-link div a {
+    text-decoration: none;
   }
-  .card h3 {
-    margin: 0 auto;
-    font-family: monospace;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 0px;
-    display: flex;
-    align-items: center;
+  .landing-page #menu-link div a h5 {
+    align-self: center;
+    color: #000;
     text-align: center;
-    color: #000000;
+    font-family: Exo;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+  .menuClose {
+    right: -175px;
+    animation-name: menuCl;
+    animation-duration: 0.5s;
+  }
+  .menuActive {
+    right: 0;
+    animation-name: menuAct;
+    animation-duration: 0.5s;
+  }
+  @keyframes menuCl {
+    from {
+      right: 0;
+    }
+    to {
+      right: -175px;
+    }
+  }
+  @keyframes menuAct {
+    from {
+      right: -175px;
+    }
+    to {
+      right: 0;
+    }
   }
   .main-block {
     margin: 0 auto;
@@ -148,8 +195,6 @@
     color: #000000;
   }
   .main-block section div {
-    display: flex;
-    justify-content: center;
     margin-top: 30px;
   }
   .main-block section div img {
@@ -177,11 +222,10 @@
     border: 2px solid black;
     border-radius: 20px;
   }
-  .but-wel h5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
+  .but-wel a {
+    text-decoration: none;
+  }
+  .but-wel a h5 {
     font-family: "Exo";
     font-weight: 400;
     font-size: 16px;
@@ -232,7 +276,6 @@
   }
   .price-block section {
     margin: 20px 20px 0 0;
-    display: flex;
     justify-content: space-between;
     align-items: end;
   }
@@ -315,10 +358,6 @@
   }
   .block-type-1 {
     margin: 10px auto 0;
-    height: auto;
-    width: auto;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     border: 1px solid black;
   }
@@ -341,11 +380,7 @@
   }
   .block-type-2 {
     margin: 20px auto 0;
-    height: auto;
-    width: auto;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     border: 1px solid black;
   }
   .block-type-2 p {
@@ -395,186 +430,15 @@
     background-image: url(../src/assets//image/image\ 7.png);
     background-size: cover;
   }
-  .works-page {
-    margin: 10px 17px auto;
-    height: auto;
-    width: auto;
-  }
-  .works-page h1 {
-    margin: 0;
-    font-family: "Exo";
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 48px;
-    text-align: center;
-    letter-spacing: 0.6em;
-    color: #000000;
-  }
-  .works-page article {
-    display: grid;
-    grid-template-columns: repeat(2, 100px);
-    gap: 30px;
-    justify-content: space-evenly;
-    margin: 27px auto 60px;
-    height: auto;
-    width: auto;
-  }
-  .client-block {
-    position: static;
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-  }
-  .client-block .gender {
-    position: absolute;
-    right: 0px;
-    bottom: 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    outline: 1px solid black;
-    background: white;
-  }
-  .client-block .gender img {
-    margin: 0 auto;
-    height: auto;
-    width: auto;
-  }
-  .client-block .h-clblock {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: 20px;
-    outline: 1px solid black;
-  }
-  .client-block .h-clblock h6 {
-    color: #000;
-    text-align: center;
-    font-family: Exo;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 0px;
-    letter-spacing: 6px;
-  }
-  .account-page {
-    width: auto;
-    height: auto;
-    background: #FFD600;
-    padding-top: 17px;
-    padding: 17px;
-  }
-  .account-page h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 48px;
-    width: auto;
-    color: #000;
-    text-align: center;
-    font-family: Exo;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 5px;
-    margin: 0 17px 17px;
-    border-radius: 40px 40px 30px 30px;
-    border: 2px solid #000;
-  }
-  .account-page article {
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: repeat(3, auto);
-    gap: 30px;
-    padding: 30px 10px 44px;
-  }
-  .account-page article div {
-    width: 82px;
-    height: 103px;
-    border-radius: 25px 25px 15px 15px;
-    border: 1px solid #000;
-  }
-  .account-page article div img {
-    width: 82px;
-    height: 103px;
-    border-radius: 25px 25px 15px 15px;
-  }
-  .last-works {
-    height: auto;
-    width: auto;
-    padding: 10px 17px 36px;
-  }
-  .last-works h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 286px;
-    height: 48px;
-    color: #000;
-    text-align: center;
-    font-family: Exo;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 0px;
-    letter-spacing: 14.4px;
-  }
-  .last-works article {
-    margin-top: 17px;
-    width: auto;
-    height: auto;
-  }
-  .last-works article section {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 30px;
-    padding: 30px 12px 17px;
-  }
-  .last-works article section div {
-    width: 82px;
-    height: 103px;
-    border-radius: 20px;
-    border: 1px solid #000;
-  }
-  .last-works article section div img {
-    width: 82px;
-    height: 103px;
-    border-radius: 20px;
-  }
-  .last-works article p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    height: 27px;
-    width: auto;
-    color: #000;
-    text-align: center;
-    font-family: Exo;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 0px;
-    letter-spacing: 15px;
-  }
   footer {
     background: black;
     width: auto;
     height: 134px;
   }
   .footer-menu {
-    display: flex;
     justify-content: space-around;
-    align-items: center;
     margin: 0 auto;
     height: 134px;
-    width: auto;
   }
   .partner {
     height: 102px;
