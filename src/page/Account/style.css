@@ -1,0 +1,210 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  @font-face {
+    font-family: "Exo";
+    src: url(../src/assets/font/Exo-Black.ttf);
+  }
+  @font-face {
+    font-family: "Gluten";
+    src: url(../src/assets/font/Gluten-Black.ttf);
+  }
+  .footer-menu, .account-page h1, .burger-menu, .but-add, .header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+  }
+  body {
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  header {
+    position: sticky;
+    top: 0px;
+    z-index: 40;
+    height: auto;
+    width: auto;
+    background: #FFD600;
+    border-bottom: 1px solid black;
+  }
+  .header-menu {
+    margin: 0 auto;
+    justify-content: space-around;
+    height: 63px;
+  }
+  .header-menu img {
+    width: 142px;
+    height: 49px;
+    border-radius: 16px;
+    border: 2px solid black;
+  }
+  .header-menu div {
+    display: flex;
+    width: auto;
+    height: auto;
+    gap: 20px;
+  }
+  .but-add {
+    border-radius: 10px;
+    background: #FFE587;
+    border: 0px solid black;
+    height: 49px;
+    width: 49px;
+  }
+  .but-add img {
+    height: 45px;
+    width: 45px;
+    border: 0;
+  }
+  .burger-menu {
+    height: 49px;
+    width: 49px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+  .burger-menu img {
+    height: 26px;
+    width: 36px;
+    border-radius: 0;
+    border: 0;
+  }
+  .burger-menu .close {
+    transform: rotate(0deg);
+    animation-name: closeBut;
+    animation-duration: 0.2s;
+  }
+  .burger-menu .active {
+    transform: rotate(180deg);
+    animation-name: activeBut;
+    animation-duration: 0.2s;
+  }
+  @keyframes activeBut {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  @keyframes closeBut {
+    from {
+      transform: rotate(180deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  main {
+    width: auto;
+    height: auto;
+  }
+  .account-page {
+    width: auto;
+    height: auto;
+    background: #FFD600;
+    padding-top: 17px;
+    padding: 17px;
+  }
+  .account-page h1 {
+    height: 48px;
+    color: #000;
+    text-align: center;
+    font-family: Exo;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin: 0 17px 17px;
+    border-radius: 40px 40px 30px 30px;
+    border: 2px solid #000;
+  }
+  .account-page article {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, auto);
+    gap: 30px;
+    padding: 30px 10px 44px;
+  }
+  .account-page article div {
+    width: 82px;
+    height: 103px;
+    border-radius: 25px 25px 15px 15px;
+    border: 1px solid #000;
+  }
+  .account-page article div img {
+    width: 82px;
+    height: 103px;
+    border-radius: 25px 25px 15px 15px;
+  }
+  footer {
+    background: black;
+    width: auto;
+    height: 134px;
+  }
+  .footer-menu {
+    justify-content: space-around;
+    margin: 0 auto;
+    height: 134px;
+  }
+  .partner {
+    height: 102px;
+    width: auto;
+  }
+  .partner h3 {
+    margin: 0 auto;
+    font-family: Exo;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    text-transform: lowercase;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .partner img {
+    height: 89px;
+    width: 89px;
+  }
+  .connect {
+    height: 110px;
+    width: 216px;
+    background: white;
+    border: 0;
+    border-radius: 25px;
+  }
+  .connect h4 {
+    font-family: Exo;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: lowercase;
+    color: #000000;
+    margin: 0;
+    height: 27px;
+    margin-top: 6px;
+  }
+  .connect div {
+    display: grid;
+    grid-template-columns: 32px 150px;
+    grid-template-rows: 32px 32px;
+    justify-content: center;
+  }
+  .connect div img {
+    height: 32px;
+    width: 32px;
+  }
+  .connect div p {
+    font-family: Exo;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+    color: #000000;
+    margin: 5px 0;
+  }
+}/*# sourceMappingURL=style.css.map */
