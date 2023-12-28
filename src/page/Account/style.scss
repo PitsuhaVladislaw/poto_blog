@@ -1,12 +1,12 @@
 @media (min-width: 320px) and (max-width: 480px) {
     @font-face {
         font-family: 'Exo';
-        src: url(../src/assets/font/Exo-Black.ttf);
+        src: url(../../assets/font/Exo-Black.ttf);
     }
 
     @font-face {
         font-family: 'Gluten';
-        src: url(../src/assets/font/Gluten-Black.ttf);
+        src: url(../../assets/font/Gluten-Black.ttf);
     }
 
     %setBlock {
@@ -125,6 +125,7 @@
         width: auto;
         height: auto;
         background: #FFD600;
+        position: relative;
         padding-top: 17px;
         padding: 17px;
 
@@ -133,7 +134,7 @@
             height: 48px;
             color: #000;
             text-align: center;
-            font-family: Exo;
+            font-family: 'Exo';
             font-size: 25px;
             font-style: normal;
             font-weight: 500;
@@ -143,24 +144,135 @@
             border: 2px solid #000;
         }
 
-        article {
+        .menu-link {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            position: fixed;
+            border-radius: 0px 0px 0px 62px;
+            border-bottom: 1px solid #000;
+            border-left: 1px solid #000;
+            background: #FFD600;
+            top: 64px;
+            right: 0;
+
+            div {
+                border-bottom: 1px solid #000;
+                @extend %setBlock;
+                width: 173px;
+                height: 41px;
+
+                a {
+                    text-decoration: none;
+
+                    h5 {
+                        align-self: center;
+                        color: #000;
+                        text-align: center;
+                        font-family: 'Exo';
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .menu-open {
+            display: flex;
+            right: 0;
+            animation: slideIn 0.3s ease-in-out;
+            animation: openMenu 0.3s ease-in-out;
+        }
+
+        .menu-closed {
+            display: flex;
+            right: -175px;
+            animation: slideOut 0.3s ease-in-out;
+            animation: closeMenu 0.3s ease-in-out;
+        }
+
+        @keyframes openMenu {
+            from {
+                right: -175px;
+            }
+            to {
+                right: 0;
+            }
+        }
+
+        @keyframes closeMenu {
+            from {
+                right: 0;
+            }
+            to {
+                right: -175px;
+            }
+        }
+
+        #gallery {
             display: grid;
             justify-content: space-evenly;
             grid-template-columns: repeat(3, auto);
             gap: 30px;
             padding: 30px 10px 44px;
 
-            div {
+            .image {
                 width: 82px;
                 height: 103px;
                 border-radius: 25px 25px 15px 15px;
                 border: 1px solid #000;
+                width: 82px;
+                height: 103px;
+                border-radius: 25px 25px 15px 15px;
+            }
+        }
 
-                img {
-                    width: 82px;
-                    height: 103px;
-                    border-radius: 25px 25px 15px 15px;
-                }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+
+            .close-btn,
+            .arrow {
+                position: absolute;
+                font-size: 30px;
+                color: #fff;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            .close-btn {
+                top: 100px;
+                right: 30px;
+                font-size: 50px;
+            }
+
+            .arrow {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .left {
+                left: 20px;
+            }
+
+            .right {
+                right: 20px;
+            }
+
+            #overlay-image {
+                width: 200px;
+                height: 350px;
             }
         }
     }
@@ -184,7 +296,7 @@
 
         h3 {
             margin: 0 auto;
-            font-family: Exo;
+            font-family: 'Exo';
             font-weight: 700;
             font-size: 14px;
             line-height: 16px;
@@ -209,7 +321,7 @@
         border-radius: 25px;
 
         h4 {
-            font-family: Exo;
+            font-family: 'Exo';
             font-weight: 700;
             font-size: 16px;
             line-height: 17px;
@@ -234,7 +346,7 @@
             }
 
             p {
-                font-family: Exo;
+                font-family: 'Exo';
                 font-weight: 700;
                 font-size: 12px;
                 line-height: 15px;

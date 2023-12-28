@@ -1,11 +1,11 @@
 @media (min-width: 320px) and (max-width: 480px) {
   @font-face {
     font-family: "Exo";
-    src: url(../src/assets/font/Exo-Black.ttf);
+    src: url(../../assets/font/Exo-Bold.ttf);
   }
   @font-face {
     font-family: "Gluten";
-    src: url(../src/assets/font/Gluten-Black.ttf);
+    src: url(../../assets/font/Gluten-Black.ttf);
   }
   .footer-menu, .client-block .h-clblock, .client-block .gender, .burger-menu, .but-add, .header-menu {
     display: flex;
@@ -150,7 +150,7 @@
   .client-block .h-clblock h6 {
     color: #000;
     text-align: center;
-    font-family: Exo;
+    font-family: "Exo";
     font-size: 10px;
     font-style: normal;
     font-weight: 600;
@@ -173,7 +173,7 @@
   }
   .partner h3 {
     margin: 0 auto;
-    font-family: Exo;
+    font-family: "Exo";
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -194,7 +194,7 @@
     border-radius: 25px;
   }
   .connect h4 {
-    font-family: Exo;
+    font-family: "Exo";
     font-weight: 700;
     font-size: 16px;
     line-height: 17px;
@@ -217,7 +217,7 @@
     width: 32px;
   }
   .connect div p {
-    font-family: Exo;
+    font-family: "Exo";
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;

@@ -21,7 +21,7 @@ window.onload = function() {
         blockLink.style.display = 'none';
         burgerMenu.classList.remove('active');
         burgerMenu.classList.add('close');
-    }, 500)
+    }, 100)
 }
 
 // * Scrolling
@@ -30,4 +30,3 @@ function scrollToElement(elementId) {
     var element = document.getElementById(elementId);
     element.scrollIntoView({ behavior: 'smooth' });
 }
-
