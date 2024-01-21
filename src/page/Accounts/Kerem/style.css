@@ -1,11 +1,11 @@
 @media (min-width: 320px) and (max-width: 480px) {
   @font-face {
     font-family: "Exo";
-    src: url(../../assets/font/Exo-Black.ttf);
+    src: url(../../../assets/font/Exo-Black.ttf);
   }
   @font-face {
     font-family: "Gluten";
-    src: url(../../assets/font/Gluten-Black.ttf);
+    src: url(../../../assets/font/Gluten-Black.ttf);
   }
   .footer-menu, .account-page .menu-link div, .account-page h1, .burger-menu, .but-add, .header-menu {
     display: flex;
@@ -71,13 +71,9 @@
   }
   .burger-menu .close {
     transform: rotate(0deg);
-    animation-name: closeBut;
-    animation-duration: 0.2s;
   }
   .burger-menu .active {
     transform: rotate(180deg);
-    animation-name: activeBut;
-    animation-duration: 0.2s;
   }
   @keyframes activeBut {
     from {
@@ -131,6 +127,7 @@
     border-left: 1px solid #000;
     background: #FFD600;
     top: 64px;
+    z-index: 2;
     right: 0;
   }
   .account-page .menu-link div {

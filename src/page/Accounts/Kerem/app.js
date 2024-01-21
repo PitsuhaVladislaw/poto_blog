@@ -36,7 +36,7 @@ gallery.addEventListener('click', (e) => {
 });
 
 const showImage = () => {
-    const imagePath = `../../assets/image/kerem/kerem-${currentIndex + 1}.jpg`;
+    const imagePath = `../../../assets/image/kerem/kerem-${currentIndex + 1}.jpg`;
     overlayImage.src = imagePath;
     overlay.style.display = 'flex';
 }

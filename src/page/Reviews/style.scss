@@ -85,14 +85,10 @@
 
         .close {
             transform: rotate(0deg);
-            animation-name: closeBut;
-            animation-duration: 0.2s;
         }
 
         .active {
             transform: rotate(180deg);
-            animation-name: activeBut;
-            animation-duration: 0.2s;
         }
     }
 
@@ -137,7 +133,7 @@
             color: #000000;
         }
 
-        article {
+        .clients {
             display: grid;
             grid-template-columns: repeat(2, 100px);
             gap: 30px;
@@ -145,6 +141,82 @@
             margin: 27px auto 60px;
             height: auto;
             width: auto;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .menu-link {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            position: fixed;
+            border-radius: 0px 0px 0px 62px;
+            border-bottom: 1px solid #000;
+            border-left: 1px solid #000;
+            background: #FFD600;
+            z-index: 2;
+            top: 64px;
+            right: 0;
+
+            div {
+                border-bottom: 1px solid #000;
+                @extend %setBlock;
+                width: 173px;
+                height: 41px;
+
+                a {
+                    text-decoration: none;
+
+                    h5 {
+                        align-self: center;
+                        color: #000;
+                        text-align: center;
+                        font-family: 'Exo';
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .menu-open {
+            display: flex;
+            right: 0;
+            animation: slideIn 0.3s ease-in-out;
+            animation: openMenu 0.3s ease-in-out;
+        }
+
+        .menu-closed {
+            display: flex;
+            right: -175px;
+            animation: slideOut 0.3s ease-in-out;
+            animation: closeMenu 0.3s ease-in-out;
+        }
+
+        @keyframes openMenu {
+            from {
+                right: -175px;
+            }
+
+            to {
+                right: 0;
+            }
+        }
+
+        @keyframes closeMenu {
+            from {
+                right: 0;
+            }
+
+            to {
+                right: -175px;
+            }
         }
     }
 
@@ -152,7 +224,6 @@
         position: static;
         width: 100px;
         height: 100px;
-        border: 1px solid black;
 
         .gender {
             position: absolute;
@@ -162,6 +233,7 @@
             width: 40px;
             height: 40px;
             outline: 1px solid black;
+            border-radius: 20px;
             background: white;
 
             img {
@@ -174,7 +246,8 @@
         .h-clblock {
             @extend %setBlock;
             height: 20px;
-            outline: 1px solid black;
+            border-bottom: 2px solid black;
+            border-radius: 10px;
 
             h6 {
                 color: #000;
@@ -186,6 +259,24 @@
                 line-height: 0px;
                 letter-spacing: 6px;
             }
+        }
+    }
+
+    .client-block:hover {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        outline: 2px solid black;
+        border-radius: 10px;
+
+        .gender  {
+            display: none;
+        }
+
+        .h-clblock {
+            position: absolute;
+            border: none;
+            bottom: 0;
         }
     }
 
